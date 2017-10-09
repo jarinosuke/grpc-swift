@@ -3943,6 +3943,366 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7F3C9ED01F8C0B41005E3D19 /* DevDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-w",
+				);
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "-w";
+			};
+			name = DevDebug;
+		};
+		7F3C9ED11F8C0B41005E3D19 /* DevDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/zlib_example_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				TARGET_NAME = "zlib-example";
+			};
+			name = DevDebug;
+		};
+		7F3C9ED21F8C0B41005E3D19 /* DevDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/Czlib_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MODULEMAP_FILE = SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib/module.modulemap;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Czlib;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = Czlib;
+			};
+			name = DevDebug;
+		};
+		7F3C9ED31F8C0B41005E3D19 /* DevDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+					Sources/BoringSSL/include,
+					Sources/CgRPC/include,
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/gRPC_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = gRPC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = gRPC;
+			};
+			name = DevDebug;
+		};
+		7F3C9ED41F8C0B41005E3D19 /* DevDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					Sources/CgRPC/include,
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+					Sources/BoringSSL/include,
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/CgRPC_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				MODULEMAP_FILE = Sources/CgRPC/include/module.modulemap;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CgRPC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = CgRPC;
+			};
+			name = DevDebug;
+		};
+		7F3C9ED51F8C0B41005E3D19 /* DevDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					Sources/BoringSSL/include,
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/BoringSSL_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				MODULEMAP_FILE = SwiftGRPC.xcodeproj/GeneratedModuleMap/BoringSSL/module.modulemap;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = BoringSSL;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = BoringSSL;
+			};
+			name = DevDebug;
+		};
+		7F3C9ED61F8C0B41005E3D19 /* DevDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+					Sources/BoringSSL/include,
+					Sources/CgRPC/include,
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/gRPCTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = gRPCTests;
+			};
+			name = DevDebug;
+		};
+		7F3C9ED71F8C0B49005E3D19 /* DevRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-w",
+				);
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "-w";
+			};
+			name = DevRelease;
+		};
+		7F3C9ED81F8C0B49005E3D19 /* DevRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/zlib_example_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				TARGET_NAME = "zlib-example";
+			};
+			name = DevRelease;
+		};
+		7F3C9ED91F8C0B49005E3D19 /* DevRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/Czlib_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MODULEMAP_FILE = SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib/module.modulemap;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Czlib;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = Czlib;
+			};
+			name = DevRelease;
+		};
+		7F3C9EDA1F8C0B49005E3D19 /* DevRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+					Sources/BoringSSL/include,
+					Sources/CgRPC/include,
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/gRPC_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = gRPC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = gRPC;
+			};
+			name = DevRelease;
+		};
+		7F3C9EDB1F8C0B49005E3D19 /* DevRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					Sources/CgRPC/include,
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+					Sources/BoringSSL/include,
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/CgRPC_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				MODULEMAP_FILE = Sources/CgRPC/include/module.modulemap;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CgRPC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = CgRPC;
+			};
+			name = DevRelease;
+		};
+		7F3C9EDC1F8C0B49005E3D19 /* DevRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					Sources/BoringSSL/include,
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/BoringSSL_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				MODULEMAP_FILE = SwiftGRPC.xcodeproj/GeneratedModuleMap/BoringSSL/module.modulemap;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = BoringSSL;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = BoringSSL;
+			};
+			name = DevRelease;
+		};
+		7F3C9EDD1F8C0B49005E3D19 /* DevRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/zlib-0.4.0/Sources/Czlib/include",
+					Sources/BoringSSL/include,
+					Sources/CgRPC/include,
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/gRPCTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = gRPCTests;
+			};
+			name = DevRelease;
+		};
 		OBJ_1146 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4310,7 +4670,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_1146 /* Debug */,
+				7F3C9ED51F8C0B41005E3D19 /* DevDebug */,
 				OBJ_1147 /* Release */,
+				7F3C9EDC1F8C0B49005E3D19 /* DevRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -4319,7 +4681,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_1452 /* Debug */,
+				7F3C9ED61F8C0B41005E3D19 /* DevDebug */,
 				OBJ_1453 /* Release */,
+				7F3C9EDD1F8C0B49005E3D19 /* DevRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -4328,7 +4692,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
+				7F3C9ED01F8C0B41005E3D19 /* DevDebug */,
 				OBJ_4 /* Release */,
+				7F3C9ED71F8C0B49005E3D19 /* DevRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -4337,7 +4703,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_809 /* Debug */,
+				7F3C9ED11F8C0B41005E3D19 /* DevDebug */,
 				OBJ_810 /* Release */,
+				7F3C9ED81F8C0B49005E3D19 /* DevRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -4346,7 +4714,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_818 /* Debug */,
+				7F3C9ED21F8C0B41005E3D19 /* DevDebug */,
 				OBJ_819 /* Release */,
+				7F3C9ED91F8C0B49005E3D19 /* DevRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -4355,7 +4725,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_840 /* Debug */,
+				7F3C9ED31F8C0B41005E3D19 /* DevDebug */,
 				OBJ_841 /* Release */,
+				7F3C9EDA1F8C0B49005E3D19 /* DevRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -4364,7 +4736,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_865 /* Debug */,
+				7F3C9ED41F8C0B41005E3D19 /* DevDebug */,
 				OBJ_866 /* Release */,
+				7F3C9EDB1F8C0B49005E3D19 /* DevRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
